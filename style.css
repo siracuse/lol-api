@@ -1,0 +1,435 @@
+/*BASE*/
+@font-face {
+    font-family: 'friz';
+    src: url('police/friz-medium.otf') format('truetype');
+}
+body {
+    background-image: url(img/bg/1.png), url(img/bg/2.png), url(img/bg/3.png), url(img/bg/4.png), linear-gradient(175deg, #1c1c1c, #0d0d0d);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: top left, top right, bottom left, bottom right;
+    min-height: 100vh;
+}
+.mg-bt-10 {
+    margin-bottom: 10px;
+}
+.mg-bt-20 {
+    margin-bottom: 20px;
+}
+.mg-bt-40 {
+    margin-bottom: 40px;
+}
+.mg-tp-20 {
+    margin-top: 20px;
+}
+.mg-tp-40 {
+    margin-top: 40px;
+}
+.pd-0 {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+p {
+    margin: 0;
+}
+.h1-style {
+    background-image: linear-gradient(to bottom, #fce293, #b8933a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+    font-weight: 700;
+}
+
+/*MENU*/
+.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand  {
+    color: #fcd359;
+    transition: all 0.2s;
+}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-brand:hover {
+    color: #f1e6d2;
+}
+.navbar-nav>li>.dropdown-menu {
+    background-color: #181818;
+    padding:0;
+}
+.dropdown-menu>li>a {
+    color: #bfb9a5;
+    padding: 6px 20px;
+}
+.dropdown-menu>li>a:hover {
+    background-color: #0d0d0d;
+    color: #bfb9a5;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #fcd359;
+}
+@media all and (min-width: 768px) {
+    .border-style{
+        border-bottom: 1px solid #ffd866;
+        margin: 0 auto;
+    }
+}
+
+/*HISTO*/
+.histo-pseudo {
+    font-family: friz, Arial, serif;
+    color: #fff;
+    text-shadow: black 0.1em 0.1em 0.3em;
+}
+.histo-intro{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.histo-rank {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+.histo-mastery {
+    width: 90px;
+    height: 90px;
+    margin-bottom: -20px;
+    border-radius: 51px;
+}
+.histo-rank-block {
+    text-align: center;
+}
+.histo-mastery-img {
+    width: 45px;
+    height: 45px;
+}
+.histo-mastery-bandeau {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.histo-bandeau-1 {
+    background-color: #A3CFEC;
+    border-radius: 5px;
+}
+.histo-bandeau-0 {
+    background-color: #E2B6B3;
+    border-radius: 5px;
+}
+@media all and (max-width: 768px ) {
+    .histo-bandeau-1, .histo-bandeau-0 {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+.histo-bandeau-solo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+    color: #333;
+    cursor: pointer;
+    /*RESPONSIVE*/
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.histo-bandeau-solo-6 {
+    width: 20px;
+    height: 20px;
+}
+.histo-bandeau-spell {
+    width: 21px;
+    height:  21px;
+}
+.histo-bandeau-champ {
+    width: 42px;
+    height: 42px;
+    border-radius: 22px;
+}
+.histo-bandeau-details-1 {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    /*RESPONSIVE*/
+    justify-content: space-between;
+}
+.histo-bandeau-details-1-1 {
+    display: flex;
+}
+.histo-bandeau-details-1-1-1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+.histo-team {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.histo-mastery-content {
+    display: flex;
+    justify-content: center;
+}
+.bg-historique {
+    position: absolute;
+    width: 100%;
+    height: 1080px;
+    z-index: -10;
+    background-color: black;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-image: url('img/bg-lol4.jpg');
+    top: 0;
+}
+.histo-form {
+    display: flex;
+    justify-content: center;
+}
+.histo-form-input {
+    margin-bottom: 0;
+    margin-right: 5px;
+}
+@media all and (max-width: 480px) {
+    .histo-form-input {
+        width: -webkit-fill-available;
+    }
+}
+
+/*Accueil*/
+.icon-menu {
+    margin-right: 5px;
+}
+.bg- {
+    background-color:#000;
+}
+.navbar-inverse {
+    background-color: #181818;
+}
+.navbar-inverse:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(90deg, transparent 0%, #fcd359 50%, transparent 100%);
+}
+.navbar {
+    border-radius: 0;
+}
+.img-accueil {
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*POP UP LOGIN*/
+.modal-dialog {
+    max-width: 400px;
+}
+
+/*VIDEO*/
+.embed-responsive-16by8 {
+    padding-bottom: 24%;
+}
+@media all and (max-width: 768px ) {
+    .video:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .video {
+        height: 200px;
+    }
+}
+
+/*NEW GAME*/
+.new-inv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.new-inv label {
+    margin-bottom: 10px;
+}
+.new-title {
+    font-weight: 700;
+}
+.cc-selector input {
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.aram {
+    background-image: url(img/aram.jpg);
+}
+.faille {
+    background-image: url(img/faille.jpg);
+}
+.top {
+    background-image: url(img/poste/top.png);
+}
+.jungle {
+    background-image: url(img/poste/jungle.png);
+}
+.mid {
+    background-image: url(img/poste/mid.png);
+}
+.adc {
+    background-image: url(img/poste/bot.png);
+}
+.support {
+    background-image: url(img/poste/support.png);
+}
+.random {
+    background-image: url(img/poste/fill.png);
+}
+.cc-selector input:active +.drinkcard-cc  {
+
+}
+.cc-selector input:checked +.drinkcard-cc, .cc-selector input:checked +.drinkcard-cc-2 {
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+}
+.drinkcard-cc {
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 320px;
+    height: 180px;
+    filter: brightness(30%);
+    -webkit-filter: brightness(30%);
+    transition-duration: 200ms;
+}
+.drinkcard-cc:hover {
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+    transition-duration: 200ms;
+}
+.drinkcard-cc-2 {
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    filter: brightness(20%);
+    -webkit-filter: brightness(20%);
+    transition-duration: 200ms;
+}
+.drinkcard-cc-2:not(:last-child) {
+    margin-right: 20px;
+}
+.drinkcard-cc-2:hover {
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+    transition-duration: 200ms;
+}
+.new-input, .new-modif {
+    background-color: #181818;
+    border: 2px solid #ffd866;
+    padding: 5px 20px;
+    color: #fcd359;
+    border-radius: 1px;
+    transition-duration: 200ms;
+    text-transform: uppercase;
+}
+.new-input:hover, .new-modif:hover {
+    background-color: #0d0d0d;
+    color: #f1e6d2;
+    border: 2px solid #ffd866;
+}
+.lb-style {
+    color: #bfb9a5;
+}
+
+/*LIST*/
+.list-submit {
+    background: none;
+    border: none;
+}
+.list-param {
+    display: flex;
+}
+.list-param a  {
+    margin-right: 15px;
+    color: #333;
+}
+.list-modal-content {
+    display: flex;
+    justify-content: space-around;
+}
+.list-modal-content input{
+    width: 20px;
+    margin: 0 auto;
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+.list-bg {
+    background-color: #1E1E1E;
+    display: flex;
+    align-items: center;
+    color: #bfb9a5;
+}
+.list-vs {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #000;
+}
+.list-action {
+    display: flex;
+    justify-content: flex-end;
+}
+.list-vs-player {
+    font-size: 18px;
+    font-weight: 700;
+}
+.form-list-panel {
+    width: fit-content;
+}
+.list-panel {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.list-panel span {
+    color: #bfb9a5;
+}
+.list-panel span:hover {
+    color: #fff;
+}
+.list-carte, .list-cat, .list-date {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.list-auteur {
+    font-weight: 700;
+}
+.first-player {
+    margin-top: -20px;
+}
+.second-player {
+    margin-bottom: -20px;
+}
+
+/*HISTO*/
+.histo-param {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.list-vs-player-2 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/*CLASSEMENT*/
+.classement-bandeau {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/*HISTO-DUEL*/
+.tr-style {
+    color: #fcd359;
+}
