@@ -26,7 +26,7 @@ if (!empty($rank)) {
 }
 ```
 
-##Sources
+## Sources
 
 [RIOT Games API](https://developer.riotgames.com/)
 
