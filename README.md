@@ -1,6 +1,6 @@
 # League of Legends API
 
-Projet personelle réalisé pendant ma formation en licence professionnelle.
+Projet personel réalisé pendant ma formation en licence professionnelle.
 
 
 ## Contexte
